@@ -28,6 +28,8 @@ awesome_project.backers
 The tricky thing here is that projects can have many backers and backers can
 back many projects. Neither can _belong to_ just one of the other.
 
+backers -< project_backer >-projects 
+
 However, if we introduce a third class in-between Project and Backer, we can
 establish a _has-many-through_ relationship _in both directions!
 
