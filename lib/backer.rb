@@ -15,7 +15,7 @@ class Backer
             instance.backer == self
         end
     end
-    #list all projects associated with backer
+  
     def backed_projects 
         self.pb.map do |backer|
             backer.project
